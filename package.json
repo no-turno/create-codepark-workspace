@@ -1,0 +1,8 @@
+{
+    "bun-create": {
+        "postinstall": [
+            "bun run ./scripts/postinstall.js"
+        ],
+        "preinstall": "bun run ./scripts/preinstall.js"
+    }
+}

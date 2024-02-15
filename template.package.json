@@ -1,0 +1,13 @@
+{
+    "name": "@bunstacks/codepark-workspace",
+    "type": "module",
+    "main": "./src/codepark.js",
+    "scripts": {
+        "dev": "bun run --watch ./src/codepark.js --mode=dev --cwd=${CODEPARK_CWD:-$HOME/.codepark}",
+        "serve": "bun run --watch ./src/codepark.js --mode=ssr --cwd=${CODEPARK_CWD:-$HOME/.codepark}",
+        "codepark:example": "bun run --env-file=./example.env ./src/codepark.js --mode=ssr --cwd=${CODEPARK_CWD:-$HOME/.codepark}"
+    },
+    "peerDependencies": {
+        "typescript": "dev"
+    }
+}

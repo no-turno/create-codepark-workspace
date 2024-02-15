@@ -1,0 +1,38 @@
+jsx = "react"
+jsxImportSource = "react"
+logLevel = "debug"
+
+[define]
+"Bun.env.PORT" = "'8080'"
+"Bun.env.HOSTNAME" = "'127.0.0.1'"
+"process.env.RUNNER_TYPE" = "$RUNNER_TYPE"
+
+[loader]
+".ts" = "ts"
+".cjs" = "js"
+".js" = "js"
+".mts" = "ts"
+".tsx" = "tsx"
+".wasm" = "wasm"
+".toml" = "toml"
+".json" = "json"
+".replit" = "toml"
+".svg" = "file"
+".ico" = "file"
+".png" = "file"
+".mp3" = "file"
+".ogg" = "file"
+".sql" = "file"
+".sqlite" = "file"
+".css" = "css"
+".eslintrc" = "json"
+".prettierrc" = "json"
+".swcrc" = "json"
+".codeparkrc" = "json"
+
+[test]
+root = "./__tests__"
+smol = true
+
+[install]
+auto = true

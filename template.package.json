@@ -3,9 +3,8 @@
     "type": "module",
     "main": "./src/codepark.js",
     "scripts": {
-        "dev": "bun run --watch ./src/codepark.js --mode=dev --cwd=${CODEPARK_CWD:-$HOME/.codepark}",
-        "serve": "bun run --watch ./src/codepark.js --mode=ssr --cwd=${CODEPARK_CWD:-$HOME/.codepark}",
-        "codepark:example": "bun run --env-file=./example.env ./src/codepark.js --mode=ssr --cwd=${CODEPARK_CWD:-$HOME/.codepark}"
+        "dev": "bun run --watch ./src/codepark.js --mode=dev --cwd=$CODEPARK_CWD",
+        "serve": "bun run --watch ./src/codepark.js --mode=ssr --cwd=$CODEPARK_CWD"
     },
     "peerDependencies": {
         "typescript": "dev"
